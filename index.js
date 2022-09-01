@@ -21,36 +21,3 @@ app.post("/translate", (req, res)=>{
 app.listen(6767, ()=>{
     console.log("listening to port 6767")
 })
-// const tranObj = {
-//     a: 1,
-//     b: '1',
-//     c: "నీ పేరు ఏమిటి'",
-//     d: [true, 'true', 'hi', { a: 'get lost', b: ['world']}],
-//   }
-  
-//   translate(tranObj, {to: 'hi', except:['a']}).then(res => {
-//       console.log(res)
-//   }).catch(err => {
-//       console.error(err)
-//   })
-//   translate(tranObj, {to: 'en', except:['a']}).then(res => {
-//       console.log(res)
-//   }).catch(err => {
-//       console.error(err)
-//   })
-//   translate(tranObj, {to: 'es', except:['a']}).then(res => {
-//       console.log(res)
-//   }).catch(err => {
-//       console.error(err)
-//   })
-//   translate(tranObj, {to: 'bn', except:['a']}).then(res => {
-//       console.log(res)
-//   }).catch(err => {
-//       console.error(err)
-//   })
-//   translate(tranObj, {to: 'fr', except:['a']}).then(res => {
-//       console.log(res)
-//   }).catch(err => {
-//       console.error(err)
-//   })
-  
