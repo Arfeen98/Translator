@@ -19,5 +19,5 @@ app.post("/translate", (req, res)=>{
     })
 })
 app.listen(6767, ()=>{
-    console.log("listening to port 6767")
+    console.log("listening to port 6767");
 })
