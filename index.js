@@ -2,6 +2,10 @@ const translate = require('translate-google')
 const express = require('express')
 const app = express()
 app.use(express.json())
+app.get("/", (req,res)=>
+{
+res.send("welcome to home page")
+})
 
 app.post("/translate", (req, res)=>{
     console.log(req.body)
