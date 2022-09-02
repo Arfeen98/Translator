@@ -11,9 +11,5 @@
 "crome_url_overrides":
 {
 "newtab":"index.html"
-},
-  "content_scripts":[{
-      "matches":["https://www.google.com/*"],
-      "css":["main.css"]
-  }]
+}
 }
