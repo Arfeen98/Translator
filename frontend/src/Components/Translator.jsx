@@ -74,7 +74,7 @@ const [selectedToName, setNelectedToName] = useState("Hindi")
   // setQueryToValue(queryfromValue);
 
 
-setTimeout(postQuary(payload), 2000);
+setTimeout(postQuary(payload), 1000);
 
     }
 
