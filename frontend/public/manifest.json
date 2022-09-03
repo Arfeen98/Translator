@@ -1,16 +1,17 @@
 {
-  "name":"Translator",
-  "version":"1.0",
-  "manifest_version": 3,
-  "description":"Add Translator",
+  "manifest_version" : 2,
+  "name" : "Translator",
+  "version" : "1.0",
+  "description" : "Translator Anywhere",
   "icons":{
-    "16":"/icons/icon16.png",
-    "48":"/icons/icon48.png",
-    "128":"/icons/icon128.png"
+    "16":"icons/icon16.png",
+    "48":"icons/icon48.png",
+    "128":"icons/icon128.png"
   },
-  "browser_action":{
-    "default_popup":"index.html",
-    "default_icon":"/icons/icon48.png"
+  "browser_action" : {
+    "default_icon" : "icons/icon48.png",
+    "default_popup" : "index.html"
 },
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
 "permissions":["activeTab"]
 }
