@@ -25,7 +25,7 @@
     <a href="#Contact">Author</a> &#10023;
   </p>
   
-  Translator Extension is a extension which can translate 192 languages in any language as per your required need.
+  Translator Extension is a extension which can translate 184 languages in any language as per your required need.
   
 
 ## Glimpses of Translator Extension 🙈 :
