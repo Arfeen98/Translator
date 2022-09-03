@@ -1,9 +1,10 @@
-import { Box, Flex, Input, Select, Stack, Text, Textarea } from "@chakra-ui/react";
+import { Box, Flex, Heading, Input, Select, Stack, Text, Textarea } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import axios from 'axios'
 import languages from "./langauages";
 
 import { RiArrowLeftRightFill } from 'react-icons/ri';
+
 
 export const Translator = () => {
   const [queryfromValue, setQueryfromValue] = useState("");
@@ -94,7 +95,7 @@ setTimeout(postQuary(payload), 1000);
         borderColor="gray.300"
         boxShadow='dark-lg' p='6' rounded='md' bg='white' color={"blue"}
       >
-        <h1>Translator</h1>
+        <Heading>Translator</Heading>
         <Flex
           width={"100%"}
           h="50px"
