@@ -1,7 +1,10 @@
-import { Box, Flex, Input, Select, Stack, Textarea } from "@chakra-ui/react";
+import { Box, Flex, Input, Select, Stack, Text, Textarea } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import axios from 'axios'
 import languages from "./langauages";
+
+import { RiArrowLeftRightFill } from 'react-icons/ri';
+
 export const Translator = () => {
   const [queryfromValue, setQueryfromValue] = useState("");
   const [queryToValue, setQueryToValue] = useState("");
@@ -74,7 +77,7 @@ const [selectedToName, setNelectedToName] = useState("Hindi")
   // setQueryToValue(queryfromValue);
 
 
-setTimeout(postQuary(payload), 2000);
+setTimeout(postQuary(payload), 1000);
 
     }
 
@@ -82,14 +85,16 @@ setTimeout(postQuary(payload), 2000);
   }, [selectedfrom, selectedTo, queryfromValue]);
 
   return (
-    <Box>
+    <Box width={"600px"} minW="100px" minH="400px" height={"100%"} >
       <Box
         m="auto"
-        width={"50%"}
-        h="250px"
+        width={"90%"}
+        h="inherit"
         border={"1px solid "}
         borderColor="gray.300"
+        boxShadow='dark-lg' p='6' rounded='md' bg='white' color={"blue"}
       >
+        <h1>Translator</h1>
         <Flex
           width={"100%"}
           h="50px"
@@ -99,7 +104,7 @@ setTimeout(postQuary(payload), 2000);
           <Box
             width={"50%"}
             h="100%"
-            borderRight={"1px solid "}
+          
             borderColor="gray.300"
           >
             <Flex gap="10px">
@@ -113,6 +118,9 @@ setTimeout(postQuary(payload), 2000);
                 })}
               </Select>
             </Flex>
+          </Box>
+          <Box>
+            <Text mt="2"><RiArrowLeftRightFill /></Text>
           </Box>
           <Box width={"50%"} h="100%" borderColor="gray.300">
             <Flex gap="10px">
@@ -138,7 +146,7 @@ setTimeout(postQuary(payload), 2000);
             <Textarea
               value={queryfromValue}
               onChange={handleInputChange}
-              placeholder="Here is a sample placeholder"
+              placeholder="Write here to translate"
               h="100%"
             />
           </Box>
@@ -146,7 +154,7 @@ setTimeout(postQuary(payload), 2000);
             <Textarea
               value={queryToValue}
               onChange={handleInputChangeTo}
-              placeholder="Here is a sample placeholder"
+              placeholder="Answer will be visible here!!!"
               h="100%"
             />
           </Box>
